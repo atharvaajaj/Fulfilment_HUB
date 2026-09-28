@@ -69,29 +69,3 @@ streamlit run app.py
 ```
 
 The app is local-first and does not require external APIs.
-
-## 6. Demo flow for the interview
-
-A good 5–7 minute walkthrough is:
-
-1. Open Dashboard and point out priority, overdue, staged, stock and issue counts.
-2. Open Picking Queue and select a priority order.
-3. Show the order's item lines and explain the main-vs-overflow stock check.
-4. Go to Inventory and transfer stock from overflow to main.
-5. Return to Picking Queue and move the order through picking/picked.
-6. Open Staging & Shipping and mark the parcel staged, then confirm courier pickup.
-7. Open Issues and create or resolve an exception.
-
-## 7. What I would build next
-
-For a production version, the highest-value next steps would be:
-
-- barcode scanning for product/order verification
-- role-based access (office vs warehouse)
-- persistent audit log for every status change
-- physical location/bin tracking
-- automatic alerts for overdue priority orders
-- courier API integration for labels and pickup confirmation
-- returns and delivery-to-stock workflow
-- real inventory reconciliation/cycle counts
-- authentication and backup/monitoring
